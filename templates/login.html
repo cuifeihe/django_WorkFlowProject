@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <div>
+        <form action="/app_account/login/" method="post">
+            {% csrf_token %}
+        Job_id: <input type="text" name="job_id"><br>
+        Password: <input type="password" name="password">
+            <input type="submit">提交
+        </form>
+    </div>
+</body>
+</html>
